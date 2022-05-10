@@ -1,0 +1,57 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    background: #eee;
+}
+.bg {
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-simple-lovely-dog-claw-paw-image_42908.jpg");
+    border-bottom: 1px solid #e1e8ed;
+    height: 100vh;
+    width: 100%;
+    border: none;
+    background-repeat: repeat;
+}
+.content {
+    background: none;
+    border: none;
+}
+.pet-profile-container {
+    height: 400px;
+}
+.pet-image-container {
+    position: relative;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pet-image {
+    border: 1px solid #a1886e!important;
+    width: 320px;
+}
+
+@media screen and (max-width: 1000px) {
+    .pet-profile-container {
+        height: 300px;
+    }
+    .pet-image-container {
+        top: 150px;
+    }
+    .pet-image {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pet-profile-container {
+        height: 250px;
+    }
+    .pet-image-container{
+        top: 90px;
+    }
+    .pet-image {
+        width: 200px;
+    }
+
+    .main {
+        padding: 0 !important;
+    }
+}
