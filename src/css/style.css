@@ -26,6 +26,9 @@ body {
 .pet-image {
     width: 320px;
 }
+.bold-border {
+    border: 0.4rem solid;
+}
 
 @media screen and (max-width: 1000px) {
     .pet-profile-container {
