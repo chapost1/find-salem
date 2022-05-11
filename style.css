@@ -3,8 +3,8 @@ body {
     background: #eee;
 }
 .bg {
+    filter: invert(1);
     background-image: url("images/bg-pattern.jpeg");
-    border-bottom: 1px solid #e1e8ed;
     height: 100vh;
     width: 100%;
     border: none;
@@ -24,7 +24,6 @@ body {
     transform: translateX(-50%);
 }
 .pet-image {
-    border: 1px solid #a1886e!important;
     width: 320px;
 }
 
