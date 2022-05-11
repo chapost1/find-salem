@@ -4,7 +4,7 @@ body {
 }
 .bg {
     filter: invert(1);
-    background-image: url("images/bg-pattern.jpeg");
+    background-image: url("../images/bg-pattern.jpeg");
     height: 100vh;
     width: 100%;
     border: none;

@@ -1,20 +1,4 @@
-const owners = [
-    {
-        name: "שחר",
-        imageSource: "images/shahar-profile-image.jpeg",
-        phoneNumber: "+972526982308"
-    },
-    {
-        name: "נופר",
-        imageSource: "images/nuphar-profile-image.jpeg",
-        phoneNumber: "+972523664091"
-    }
-]
-
-
-const ownersContactContainer = document.getElementById("owners-contact-container")
-
-const newOwnerHTML = (owner) => {
+export const newOwnerHTML = (owner) => {
     return `<div class="d-inline-block mx-2 ml-3">
                 <a href="tel:${owner.phoneNumber}" data-rel="external">
                     <button type="button" class="btn btn-lg btn-success  position-relative">
@@ -29,8 +13,4 @@ const newOwnerHTML = (owner) => {
                 </a>
                 </div>
             </div>`
-}
-
-for (const owner of owners) {
-    ownersContactContainer.innerHTML += newOwnerHTML(owner)
 }

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
     <title>סיילאם</title>
-    <link href="style.css" rel="stylesheet"/>
+    <link href="src/css/style.css" rel="stylesheet"/>
 </head>
 <body>
     <div class="container main">
@@ -18,16 +18,16 @@
             <div class="card content">
                 <div class="position-relative pet-profile-container">
                     <div class="d-flex justify-content-center pet-image-container">
-                        <img src="images/salem.jpg" class="card-img-top rounded-pill border border-secondary shadow-lg pet-image" alt="תמונה של סיילאם">
+                        <img src="src/images/salem.jpg" class="card-img-top rounded-pill border border-secondary shadow-lg pet-image" alt="תמונה של סיילאם">
                     </img>
                     </div>
                 </div>
                 <div class="card-body shadow-lg container bg-white rounded">
                     <div class="mt-2">
-                        <h1 class="card-title">סיילאם</h1>
-                        <p class="card-text text-muted" id="pet-age-value">בן [שנים] שנים, [חודשים] חודשים</p>
-                        <h2 class="card-title">מצאתם אותי?</h2>
-                        <h4 class="card-title">התקשרו לבעלים</h4>
+                        <h1 class="card-title fw-bold">סיילאם</h1>
+                        <p id="pet-age-value" class="card-text text-muted"></p>
+                        <h2 class="card-title fw-bold">מצאתם אותי?</h2>
+                        <h4 class="card-title text-muted">התקשרו לבעלים</h4>
                         <div id="owners-contact-container" class="mt-4"></div>
                     </div>
                 </div>
@@ -36,7 +36,12 @@
         </div>
     </div>
 
-    <script src="petAge.js"></script>
-    <script src="owners.js"></script>
+    <script>
+        window.APP_ELEMENTS_IDS = {
+            PET_AGE: "pet-age-value",
+            OWNERS_CONTACT: "owners-contact-container"
+        }
+    </script>
+    <script src="src/script/index.js" type="module"></script>
 </body>
 </html>
