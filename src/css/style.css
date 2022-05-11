@@ -43,6 +43,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .bg {
+        filter: invert(0);
+    }
     .pet-profile-container {
         height: 250px;
     }
